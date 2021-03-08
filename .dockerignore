@@ -1,0 +1,5 @@
+# Asterisco  evita ir a todos
+**/*
+#Excepeciones
+!src
+!Dockeerfile
