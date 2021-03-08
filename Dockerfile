@@ -7,6 +7,6 @@ COPY src .
 # instala el paquete php = yum install php
 RUN apk add php
 # php index.php, es lo que queremos conseguir
-ENTRYPOINT /usr/bin/php
+ENTRYPOINT ["/usr/bin/php"]
 #crear el Docke
-CMD -f index -S 0.0.0.0:8080
+CMD ["-f", "index.php", "-S", "0.0.0.0:8080"]
