@@ -24,10 +24,10 @@ services:
       healthcheck:
         interval: 10s
         retries: 3
-        start_period: 30s
+        start_period: 10s
         #test: php -r "print file_get_contents('http://localhost:8080/');"
         test: wget -q --spider http://localhost:8080
-        timeout: 1s
+        timeout: 10s
       image: beguerhorna/phpinfo-2:latest
       networks:
       - phpinfo-2
