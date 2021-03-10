@@ -20,7 +20,7 @@ services:
           cpus: "0.1"
           memory: 100m
     expose:
-      8080
+      - "8000"
       healthcheck:
         interval: 10s
         retries: 3
